@@ -1,0 +1,110 @@
+.form,
+.info-container {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  max-width: 350px;
+  width: 40%;
+  border: 2px solid #cdd2b8;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #ffffffd5;
+  margin-top: 15%;
+}
+
+.modal {
+  position: fixed;
+  z-index: 100;
+  inset: 0;
+  background-color: rgba(64, 63, 61, 0.8);
+  overflow-y: auto;
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+.modal-container {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  width: 40%;
+  border: 2px solid #cdd2b8;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #ffffffd5;
+  margin: auto;
+}
+
+.lock {
+  overflow: hidden;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: rgb(81, 78, 78);
+  cursor: default;
+}
+
+h1 {
+  font-weight: 800;
+  margin: auto;
+  cursor: default;
+}
+
+input {
+  width: 90%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 8px 15px;
+  background-color: #5a775a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[disabled],
+input[disabled] {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+input[disabled] {
+  background-color: #5a775a;
+}
+
+.errorName,
+.errorPassword {
+  color: red;
+  font-size: 10px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.info-text {
+  text-align: center;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  button:hover {
+    background-color: #737d41;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  button {
+    font-size: 12px;
+    padding: 5px 7px;
+  }
+}

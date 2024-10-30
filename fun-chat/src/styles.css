@@ -1,0 +1,27 @@
+* {
+  font-family: sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: rgb(72, 70, 70);
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('../src/assets/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fav {
+  background-image: url('../src/assets/chat.ico');
+}
+
+@media screen and (max-width: 560px) {
+  body {
+    font-size: 0.7em;
+  }
+}
